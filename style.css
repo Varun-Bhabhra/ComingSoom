@@ -10,6 +10,15 @@
   --primary: #274546;
 }
 
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+::selection {
+  background: var(--secondary);
+  color: #fff;
+}
+
 body {
   background-color: #fff;
 }

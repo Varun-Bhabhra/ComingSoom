@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #274546;
+}
+
+body {
+  background-color: #fff;
+}
+
+#container {
+  color: var(--primary);
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 20px 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 3rem;
+}
+
+.heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.9rem;
+}
+
+.para {
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  padding-top: 20px;
+}
+
+.gif {
+  width: 80rem;
+}
+
+input {
+  padding: 13px 20px;
+  border: 2px solid var(--primary);
+  outline: var(--primary);
+  border-radius: 5px;
+}
+
+.submit {
+  background-color: var(--primary);
+  color: #fff;
+  font-size: 14px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fa-brands {
+  color: var(--primary);
+  padding: 1.5rem 1rem;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  #container {
+    max-width: 360px;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .heading {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+  }
+  .logo {
+    width: 2rem;
+  }
+
+  .gif {
+    width: 22rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #container {
+    max-width: 680px;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .heading {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.2rem;
+  }
+
+  .para {
+    font-size: 1.1rem;
+  }
+
+  .logo {
+    width: 2.5rem;
+  }
+
+  .gif {
+    width: 35rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #container {
+    max-width: 1440px;
+  }
+
+  .main {
+    flex-direction: row;
+  }
+
+  .heading {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+  }
+
+  .logo {
+    width: 3rem;
+  }
+
+  .gif {
+    width: 55rem;
+  }
+}

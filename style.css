@@ -17,7 +17,7 @@ body {
 #container {
   color: var(--primary);
   max-width: 1440px;
-  height: 100vh;
+  height: 100%;
   margin: 0 auto;
   padding: 20px 20px;
   text-align: center;
@@ -71,13 +71,14 @@ input {
 
 .fa-brands {
   color: var(--primary);
-  padding: 1.5rem 1rem;
-  font-size: 2rem;
+  padding: 1rem;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 768px) {
   #container {
     max-width: 360px;
+    /* padding: 20px 20px; */
   }
 
   .main {
